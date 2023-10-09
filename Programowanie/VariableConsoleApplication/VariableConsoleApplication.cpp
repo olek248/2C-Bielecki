@@ -59,16 +59,44 @@ void task3()
 //program obliczaj¹cy objêtoœæ sto¿ka
 void task4()
 {
-    int h, r, V;
+    double height, radius, volume;
     std::cout << "Podaj wysokoœæ sto¿ka\n";
-    std::cin >> h;
+    std::cin >> height;
     std::cout << "Podaj promieñ sto¿ka\n";
-    std::cin >> r;
+    std::cin >> radius;
 
-    int area;
-    area = 1 / 3 * h * 3, 14 * r * r;
+    volume= (height * 3.14 * radius * radius) /3;
     std::cout << "Objêtoœæ sto¿ka wynosi ";
+    std::cout << volume;
+}
+
+//program obiczaj¹cy pole ko³a
+void task5()
+{
+    int radius, area, expression;
+    std::cout << "Podaj promieñ ko³a\n";
+    std::cin >> radius;
+    area = 3.14 * radius * radius;
+    std::cout << " Pole wynosi ";
     std::cout << area;
+}
+
+//program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
+void task6()
+{
+    int number_a, number_b;
+    std::cout << "podaj liczbe a\n";
+    std::cin >> number_a;
+    std::cout << "podaj liczbe b\n";
+    std::cin >> number_b;
+     
+
+
+
+    
+
+
+
 
 
 
@@ -85,7 +113,8 @@ int main()
     //task1();
     //task2();
     //task3();
-    task4();
+    //task4();
+    //task5();
       
 
 
