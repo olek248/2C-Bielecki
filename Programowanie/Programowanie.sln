@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VariableConsoleApplication", "VariableConsoleApplication\VariableConsoleApplication.vcxproj", "{504E8E58-6616-4FDF-A872-805230CAF5B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.1.Podstawy", "0.1.Podstawy", "{47FBC8D9-F513-4D5D-AC09-5773E587648B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.2.instrukcje decyzyjne", "0.2.instrukcje decyzyjne", "{5B1F3D37-653E-46AF-94BF-746AEB731C31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -34,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D374CEDD-6D4A-4A7E-9109-0807ADC58B5E} = {47FBC8D9-F513-4D5D-AC09-5773E587648B}
+		{504E8E58-6616-4FDF-A872-805230CAF5B1} = {47FBC8D9-F513-4D5D-AC09-5773E587648B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}

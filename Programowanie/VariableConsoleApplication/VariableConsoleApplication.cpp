@@ -41,6 +41,7 @@ void task2()
 
    std::cout << "Œrednia to: " << average << "\n";
 }
+
 //program obiczaj¹cy pole prostok¹ta
 void task3()
 {
@@ -73,7 +74,7 @@ void task4()
 //program obiczaj¹cy pole ko³a
 void task5()
 {
-    int radius, area, expression;
+    int radius, area;
     std::cout << "Podaj promieñ ko³a\n";
     std::cin >> radius;
     area = 3.14 * radius * radius;
@@ -84,16 +85,104 @@ void task5()
 //program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
 void task6()
 {
-    int number_a, number_b;
+    int number_a, number_b, wyrazenie;
     std::cout << "podaj liczbe a\n";
     std::cin >> number_a;
     std::cout << "podaj liczbe b\n";
     std::cin >> number_b;
-     
+    wyrazenie = number_a * number_a * number_b * number_b;
+    std::cout << " wyra¿enie wynosi ";
+    std::cout << wyrazenie;
+}
 
 
+//Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
+void task7()
+{
+    int base, height, area;
+    std::cout << "podaj podstawe trójk¹ta\n";
+    std::cin >> base;
+    std::cout << "podaj wysokoœæ trójk¹ta\n";
+    std::cin >> height;
+    area = (base * height) / 2;
+    std::cout << " pole trójk¹ta wynosi ";
+    std::cout << area;
+}
 
-    
+
+//Program obliczaj¹cy objêtoœæ kuli o promieniu r
+void task8()
+{
+    int radius, volume;
+    std::cout << "podaj promieñ ko³a\n";
+    std::cin >> radius;
+    volume = (3.14 * radius * radius * radius) * 4 / 3;
+    std::cout <<  " objêtoœæ wynosi ";
+    std::cout << volume;
+}
+
+
+//Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+void task9()
+{
+    int base_a, base_b, height, area;
+    std::cout << "podaj d³ugoœæ pierwszej podstawy trapezu\n";
+    std::cin >> base_a;
+    std::cout << "podaj d³ugoœæ drugiej podstawy trapezu\n";
+    std::cin >> base_b;
+    std::cout << "podaj wysokoœæ trapezu\n";
+    std::cin >> height;
+    area = (base_a + base_b) * height / 2;
+    std::cout << " pole wynosi ";
+    std::cout << area;
+}
+
+
+//Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
+void task10()
+{
+    int number_a, number_b, number_c, weight_a, weight_b, weight_c, weighted_average;
+    std::cout << "podaj pierwsz¹ liczbê\n";
+    std::cin >> number_a;
+    std::cout << "podaj drug¹ liczbê\n";
+    std::cin >> number_b;
+    std::cout << "podaj trzeci¹ liczbê\n";
+    std::cin >> number_c;
+    std::cout << "podaj wagê pierwszej liczby\n";
+    std::cin >> weight_a;
+    std::cout << "podaj wagê drugiej liczby\n";
+    std::cin >> weight_b;
+    std::cout << "podaj wagê trzeciej liczby\n";
+    std::cin >> weight_c;
+    weighted_average = (number_a * weight_a + number_b * weight_b + number_c * weight_c) / 3;
+    std::cout << " œrednia wa¿ona wynosi ";
+    std::cout << weighted_average;
+}
+
+
+//Stwórz program, który pobiera od u¿ytkownika d³ugoœæ w metrach i przelicza j¹ na centymetry i milimetry, wyœwietlaj¹c wynik.
+void task11()
+{
+    int lenghtM, lenghtCM, lenghtMM;
+    std::cout << "podaj d³ugoœæ w metrach\n";
+    std::cin >> lenghtM;
+    lenghtCM = lenghtM * 100;
+    lenghtMM = lenghtCM * 10;
+    std::cout << "d³ugoœæ w centymetrach wynosi: " << lenghtCM << " cm, a w milimetrach wynosi " << lenghtMM << "mm";
+}
+
+
+//Napisz program, który konwertuje wprowadzon¹ kwotê w jednej walucie na inn¹, korzystaj¹c z okreœlonego kursu wymiany.
+void task12()
+{
+    double USD, PLN;
+    std::cout << "podaj kwotê w z³otówkach, któr¹ chcesz zamieniæ na dolary\n";
+    std::cin >> PLN;
+    USD = PLN * 4.32;
+    std::cout << " kwota w dolarach wynosi ";
+    std::cout << USD;
+
+
 
 
 
@@ -115,6 +204,13 @@ int main()
     //task3();
     //task4();
     //task5();
+    //task6();
+    //task7();
+    //task8();
+    //task9();
+    //task10();
+    //task11();
+    //task12();
       
 
 
