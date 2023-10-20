@@ -131,6 +131,60 @@ void task5()
 		std::cout << "liczby sa rozne\n";
 }
 
+//Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
+void task6()
+{
+	int wiek;
+	std::cout << "podaj swoj wiek\n";
+	std::cin >> wiek;
+	if (wiek >= 18)
+		std::cout << "jestes pelnioletni\n";
+	else
+		std::cout << "jestes nieletni\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
+void task7()
+{
+	int liczba_ca³kowita, wartoœæ_bezwzglêdna;
+	std::cout << "podaj liczbe ca³kowit¹\n";
+	std::cin >> liczba_ca³kowita;
+	if (liczba_ca³kowita > 0)
+		wartoœæ_bezwzglêdna = liczba_ca³kowita;
+	else
+		wartoœæ_bezwzglêdna = liczba_ca³kowita * -1;
+	std::cout << wartoœæ_bezwzglêdna;
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
+void task8()
+{
+	int dzieñ;
+	std::cout << "podaj liczbe dnia w tygodniu\n";
+	std::cin >> dzieñ;
+	if (dzieñ == 1)
+		std::cout << "dziœ jest poniedzia³ek\n";
+	if (dzieñ == 2)
+		std::cout << "dziœ jest wtorek\n";
+	if (dzieñ == 3)
+		std::cout << "dziœ jest œroda\n";
+	if (dzieñ == 4)
+		std::cout << "dziœ jest czwartek\n";
+	if (dzieñ == 5)
+		std::cout << "dziœ jest pi¹tek\n";
+	if (dzieñ == 6)
+		std::cout << "dziœ jest sobota\n";
+	if (dzieñ == 7)
+		std::cout << "dziœ jest niedziela\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
+void task9()
+{
+	int pierwsza_ca³kowita, druga_ca³kowita;
+
+}
+
 
 
 
@@ -140,11 +194,16 @@ void task5()
 
 int main()
 {
+	setlocale(LC_CTYPE, "polish");
 	//task1();
 	//task2();
 	//task3();
 	//task4();
 	//task5();
+	//task6();
+	//task7();
+	//task8();
+	task9();
 
 }
 
