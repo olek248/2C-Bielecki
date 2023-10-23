@@ -181,9 +181,45 @@ void task8()
 //Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i wyœwietli wiêksz¹ z nich.
 void task9()
 {
-	int pierwsza_ca³kowita, druga_ca³kowita;
-
+	int first_integer, second_integer;
+	std::cout << "podaj pierwsz¹ liczbê\n";
+	std::cin >> first_integer;
+	std::cout << "podaj drug¹ liczbê\n";
+	std::cin >> second_integer;
+	if (first_integer > second_integer)
+		std::cout << "pierwsza liczba jest wiêksza\n";
+	else
+		std::cout << "druga liczba jest wiêksza\n";
+	if (first_integer == second_integer)
+		std::cout << "liczby s¹ równe\n";
 }
+
+//Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny. Wyœwietl odpowiedni komunikat.
+void task10()
+{
+	int year;
+	std::cout << "podaj rok\n";
+	std::cin >> year;
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+		std::cout << "rok jest przestêpny\n";
+	else
+		std::cout << "rok nie jest przestêpny\n";
+}
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
+void task11()
+{
+	int number;
+	std::cout << "podaj liczbê ca³kowit¹\n";
+	std::cin >> number;
+	if (number % 3 == 0 && number % 5 == 0)
+		std::cout << "liczba jest podzielna zarówno przez 3  i 5\n";
+	else
+		std::cout << "liczba nie jest podzielna zarówno przez 3 i 5\n";
+		
+}
+
+
 
 
 
@@ -203,7 +239,9 @@ int main()
 	//task6();
 	//task7();
 	//task8();
-	task9();
+	//task9();
+	//task10();
+	//task11();
 
 }
 
