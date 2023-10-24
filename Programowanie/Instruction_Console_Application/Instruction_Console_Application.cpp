@@ -216,34 +216,106 @@ void task11()
 		std::cout << "liczba jest podzielna zarówno przez 3  i 5\n";
 	else
 		std::cout << "liczba nie jest podzielna zarówno przez 3 i 5\n";
-		
 }
 
 
-
-
-
-
-
-
-
-
-int main()
+//Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach).Na podstawie tych danych oblicz wskaŸnik BMI(Body Mass Index) i wyœwietl odpowiedni komunikat informuj¹cy o stanie zdrowia.
+void task12()
 {
-	setlocale(LC_CTYPE, "polish");
-	//task1();
-	//task2();
-	//task3();
-	//task4();
-	//task5();
-	//task6();
-	//task7();
-	//task8();
-	//task9();
-	//task10();
-	//task11();
-
+	float body_weight, height, bmi;
+	std::cout << "podaj mase cia³a w kilogramach\n";
+	std::cin >> body_weight;
+	std::cout << "podaj wzrost w metrach\n";
+	std::cin >> height;
+	bmi = body_weight / (height * height);
+	if (bmi < 16.0)
+		std::cout << "jesteœ wyg³odzony\n";
+	if (bmi > 16.0 && bmi < 16.99)
+		std::cout << "jesteœ wychudzony\n";
+	if (bmi > 17.0 && bmi < 18.49)
+		std::cout << "masz niedowagê\n";
+	if (bmi > 18.5 && bmi < 24.99)
+		std::cout << "masz prawid³ow¹ wagê\n";
+	if (bmi > 25.0 && bmi < 29.9)
+		std::cout << "masz nadwagê\n";
+	if (bmi > 30.0 && bmi < 34.99)
+		std::cout << "masz 1 stopieñ oty³oœci\n";
+	if (bmi > 35.0 && bmi < 39.99)
+		std::cout << "masz 2 stopieñ oty³oœci\n";
+	if (bmi > 40.0)
+		std::cout << "masz 3 stopieñ oty³oœci\n";
 }
+
+
+//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
+void task13()
+{
+	int first_section, second_section, third_section;
+	std::cout << "podaj d³ugóœæ pierwszego odcinka\n";
+	std::cin >> first_section;
+	std::cout << "podaj d³ugoœæ drugiego odcinka\n";
+	std::cin >> second_section;
+	std::cout << "podaj d³ugoœæ trzeciego odcinka\n";
+	std::cin >> third_section;
+}
+
+
+//Napisz program, który poprosi u¿ytkownika o podanie liczby dodatniej i obliczy jej pierwiastek kwadratowy, jeœli jest to mo¿liwe. Wyœwietl wynik lub odpowiedni komunikat.
+void task14()
+{
+	float number;
+	std::cout << "podaj liczbe dodatni¹\n";
+	std::cin >> number;
+	if (number < 0)
+		std::cout << "podaj liczbê dodatni¹\n";
+	else
+	{
+		double root = sqrt(number);
+		std::cout << "wynik to " << root;
+	}
+}
+
+
+//Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
+void task15()
+{
+	int number_day, number_month, number_year;
+	std::cout << "podaj dzieñ\n";
+	std::cin >> number_day;
+	std::cout << "podaj miesi¹c\n";
+	std::cin >> number_month;
+	std::cout << "podaj rok\n";
+	std::cin >> number_year;
+
+
+
+
+
+
+
+
+
+
+	int main()
+	{
+
+		setlocale(LC_CTYPE, "polish");
+		//task1();
+		//task2();
+		//task3();
+		//task4();
+		//task5();
+		//task6();
+		//task7();
+		//task8();
+		//task9();
+		//task10();
+		//task11();
+		//task12();
+		//task13();
+		//task14();
+		task15();
+	}
 
 
 
