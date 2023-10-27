@@ -3,6 +3,7 @@
 #include <iostream>
 
 /*
+DRY - dont't repeat yourself - nie powtarzaj siê
 operatorzy warunkowe:
 > - wiêksze
 < - mniejsze
@@ -279,13 +280,29 @@ void task14()
 //Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
 void task15()
 {
-	int number_day, number_month, number_year;
-	std::cout << "podaj dzieñ\n";
-	std::cin >> number_day;
-	std::cout << "podaj miesi¹c\n";
-	std::cin >> number_month;
-	std::cout << "podaj rok\n";
-	std::cin >> number_year;
+	int day, month, year;
+	std::cout << "Podaj dzieñ\n";
+	std::cin >> day;
+	std::cout << "Podaj miesi¹c\n";
+	std::cin >> month;
+	std::cout << "Podaj rok\n";
+	std::cin >> year;
+
+	if (day >= 1 && day <= 31
+		&& month >= 1 && month <= 12
+		&& month >= 1 && month <= 12
+		&& year != 0
+
+		&& ((month == 4 || month == 6 || month == 9 || month == 11) && day != 31)
+
+		&& month == 2 && (day >= 28
+			|| day == 29 && (year % 4 == 0 && year % 100 != 0 || year % 400 == 0))
+		&& month == 2 && (day >= 28
+			|| day == 29 && (year % 4 == 0 && year % 100 != 0 || year % 400 == 0))
+		)
+     
+		std::cout << "Data " << day << "." << month << "." << year << " jest poprawna\n";
+}
 
 
 
@@ -314,7 +331,7 @@ void task15()
 		//task12();
 		//task13();
 		//task14();
-		task15();
+		//task15();
 	}
 
 
