@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.2.instrukcje decyzyjne", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Instruction_Console_Application", "Instruction_Console_Application\Instruction_Console_Application.vcxproj", "{DCF244A3-0AB7-4982-944C-5A71619CFF25}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsole_Apllication", "LoopDoWhileConsole_Apllication\LoopDoWhileConsole_Apllication.vcxproj", "{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,14 @@ Global
 		{DCF244A3-0AB7-4982-944C-5A71619CFF25}.Release|x64.Build.0 = Release|x64
 		{DCF244A3-0AB7-4982-944C-5A71619CFF25}.Release|x86.ActiveCfg = Release|Win32
 		{DCF244A3-0AB7-4982-944C-5A71619CFF25}.Release|x86.Build.0 = Release|Win32
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Debug|x64.ActiveCfg = Debug|x64
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Debug|x64.Build.0 = Debug|x64
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Debug|x86.ActiveCfg = Debug|Win32
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Debug|x86.Build.0 = Debug|Win32
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x64.ActiveCfg = Release|x64
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x64.Build.0 = Release|x64
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x86.ActiveCfg = Release|Win32
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +63,7 @@ Global
 		{D374CEDD-6D4A-4A7E-9109-0807ADC58B5E} = {47FBC8D9-F513-4D5D-AC09-5773E587648B}
 		{504E8E58-6616-4FDF-A872-805230CAF5B1} = {47FBC8D9-F513-4D5D-AC09-5773E587648B}
 		{DCF244A3-0AB7-4982-944C-5A71619CFF25} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
+		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}
