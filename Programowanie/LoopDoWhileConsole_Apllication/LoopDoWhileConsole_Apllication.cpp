@@ -34,9 +34,28 @@ void task1()
 	std::cout << "Liczba dodatnia pobrana od uzytkownika " << numberFromUser << "\n";
 }
 
+
+//Napisz program, który ma pobraæ od u¿ytkownika liczbê dodatni¹. 
+//Zabezpiecz program przed pobieraniem liczb ujemnych.
+
+void task2()
+{
+	int numberFromUser;
+
+	do
+	{
+		std::cout << "podaj liczbê dodatni¹:\n";
+		std::cin >> numberFromUser;
+	} while (numberFromUser < 0);
+
+	std::cout << "liczba pobrana od u¿ytkownika " << numberFromUser << "\n";
+}
+
+
 int main()
 {
 	//task1();
+	task2();
 }
 
 
