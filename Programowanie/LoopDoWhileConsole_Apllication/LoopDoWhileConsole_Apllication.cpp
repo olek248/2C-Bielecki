@@ -136,13 +136,29 @@ void task4()
 	double avg = sum / numberOfNumbers;
 
 }
+//napisz program który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej.
+//program powinien obliczyæ i wyœwietliæ liczbê cyfr.
+void task5()
+{
+	int number;
+	int digit = 0;
+	std::cout << "podaj liczbê: ";
+	std::cin >> number;
+	
+	
+	
+
+	
+}
 
 int main()
 {
+	setlocale(LC_CTYPE, "polish");
 	//task1();
 	//task2();
 	//task3();
-	task4();
+	//task4();
+	//task5();
 }
 
 
