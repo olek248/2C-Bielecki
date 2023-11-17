@@ -141,9 +141,18 @@ void task4()
 void task5()
 {
 	int number;
-	int digit = 0;
+	int rest;
 	std::cout << "podaj liczbê: ";
 	std::cin >> number;
+	do
+	{
+		rest = number % 10;
+		std::cout << rest << ", ";
+		number = number / 10;
+	} while (number != 0);
+	
+
+	
 	
 	
 	
@@ -158,7 +167,7 @@ int main()
 	//task2();
 	//task3();
 	//task4();
-	//task5();
+	task5();
 }
 
 
