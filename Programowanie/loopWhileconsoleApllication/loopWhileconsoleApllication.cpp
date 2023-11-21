@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-void task2()
+void task1()
 {
 	int firstNumber, secondNumber;
 	std::cout << "podaj pierwsz¹ liczbê\n";
@@ -22,6 +22,6 @@ void task2()
 	int main()
 	{
 		setlocale(LC_CTYPE, "polish");
-		task2();
+		task1();
 	}
 
