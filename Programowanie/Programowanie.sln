@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Instruction_Console_Applica
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopDoWhileConsole_Apllication", "LoopDoWhileConsole_Apllication\LoopDoWhileConsole_Apllication.vcxproj", "{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "loopWhileconsoleApllication", "loopWhileconsoleApllication\loopWhileconsoleApllication.vcxproj", "{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -55,6 +57,14 @@ Global
 		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x64.Build.0 = Release|x64
 		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x86.ActiveCfg = Release|Win32
 		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595}.Release|x86.Build.0 = Release|Win32
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Debug|x64.ActiveCfg = Debug|x64
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Debug|x64.Build.0 = Debug|x64
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Debug|x86.Build.0 = Debug|Win32
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Release|x64.ActiveCfg = Release|x64
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Release|x64.Build.0 = Release|x64
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Release|x86.ActiveCfg = Release|Win32
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +74,7 @@ Global
 		{504E8E58-6616-4FDF-A872-805230CAF5B1} = {47FBC8D9-F513-4D5D-AC09-5773E587648B}
 		{DCF244A3-0AB7-4982-944C-5A71619CFF25} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
 		{F39B6B4B-CF87-4B44-A37C-FD8D82CF2595} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
+		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}
