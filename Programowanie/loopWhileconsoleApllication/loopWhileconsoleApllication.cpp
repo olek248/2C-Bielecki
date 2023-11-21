@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-void task1()
+void task2()
 {
 	int firstNumber, secondNumber;
 	std::cout << "podaj pierwsz¹ liczbê\n";
@@ -11,9 +11,17 @@ void task1()
 	std::cin >> secondNumber;
 
 	int nwd;
-	nwd =
-int main()
-{
-	setlocale(LC_CTYPE, "polish");
-	task1();
+	nwd = firstNumber;
+
+	while (secondNumber % nwd != 0
+		|| firstNumber % nwd != 0)
+		nwd--;
+
+	std::cout << "NWD jest równe " << nwd << "\n";
 }
+	int main()
+	{
+		setlocale(LC_CTYPE, "polish");
+		task2();
+	}
+
