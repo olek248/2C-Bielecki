@@ -1,44 +1,44 @@
-// LoopForConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
+ï»¿// LoopForConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 /*
- * Program obliczaj¹cy sumê liczb od 1 do 100
- * Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹ (czyli tak¹, której suma dzielników (z wy³¹czeniem samej siebie) jest równa danej liczbie, np. 6 jest liczb¹ doskona³¹, poniewa¿ 1 + 2 + 3 = 6).
- * Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
- * Program obliczaj¹cy n!.
- * Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
- * Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
- * Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
- * Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
- * Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu (ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
- * Program, kóry wyœwietli poni¿sze cztery zwory:
+ * Program obliczajÄ…cy sumÄ™ liczb od 1 do 100
+ * Program sprawdzajÄ…cy czy podana liczba jest liczbÄ… doskonaÅ‚Ä… (czyli takÄ…, ktÃ³rej suma dzielnikÃ³w (z wyÅ‚Ä…czeniem samej siebie) jest rÃ³wna danej liczbie, np. 6 jest liczbÄ… doskonaÅ‚Ä…, poniewaÅ¼ 1 + 2 + 3 = 6).
+ * Program wyÅ›wietlajÄ…cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+ * Program obliczajÄ…cy n!.
+ * Program wyÅ›wietlajÄ…cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4! itd.)
+ * Program wyÅ›wietlajÄ…cy na ekranie tabliczkÄ™ mnoÅ¼enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
+ * Program wyÅ›wietlajÄ…cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+ * Program obliczajÄ…cy sumÄ™ kwadratÃ³w liczb od 1 do 10
+ * Program wyÅ›wietlajÄ…cy na ekranie ciÄ…g Fibonacciego do 20 elementu (ciÄ…g Fibonacciego to ciÄ…g gdzie kaÅ¼dy element jest sumÄ… dwÃ³ch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+ * Program, kÃ³ry wyÅ›wietli poniÅ¼sze cztery zwory:
 	 ****       54321        121212        122333
 	 ***        65432        212121        223334444
 	 **         76543        121212        333444455555
 	 *          87654        212121        444455555666666
- * Oblicz sumê szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. Je¿eli siê nie pomylisz, to dla odpowiednio du¿ej wartoœci n po przemno¿eniu jej przez 6 i spierwiastkowaniu powinieneœ otrzymaæ wartoœæ liczby ? (suma szeregu jest równa ?2/6). Zwróæ uwagê, ¿e pierwsza wartoœæ indeksu to 1, a nie 0. Dok³adnoœæ obliczeñ mo¿na sprawdziæ porównuj¹c z wartoœci¹ odczytan¹ z w³asnoœci Math.PI.
- * Rozk³ad liczby na czynniki pierwsze
+ * Oblicz sumÄ™ szeregu 1/1^2 + 1/2^2 + 1/3^2 + ... +1/n^2. JeÅ¼eli siÄ™ nie pomylisz, to dla odpowiednio duÅ¼ej wartoÅ›ci n po przemnoÅ¼eniu jej przez 6 i spierwiastkowaniu powinieneÅ› otrzymaÄ‡ wartoÅ›Ä‡ liczby Ï€ (suma szeregu jest rÃ³wna Ï€2/6). ZwrÃ³Ä‡ uwagÄ™, Å¼e pierwsza wartoÅ›Ä‡ indeksu to 1, a nie 0. DokÅ‚adnoÅ›Ä‡ obliczeÅ„ moÅ¼na sprawdziÄ‡ porÃ³wnujÄ…c z wartoÅ›ciÄ… odczytanÄ… z wÅ‚asnoÅ›ci Math.PI.
+ * RozkÅ‚ad liczby na czynniki pierwsze
  */
- //Program obliczaj¹cy sumê liczb od 1 do 100
+ //Program obliczajÄ…cy sumÄ™ liczb od 1 do 100
 
 void task1()
 {
-	int number;
-	std::cout << "podaj liczbê\n";
+	int number_from_user;
+	std::cout << "podaj liczbÄ™\n";
 
 	for (int i = 1; i < 101; i++)
 	{
-		number = number + i;
+		number_from_user = number_from_user + i;
 	}
-	std::cout << "suma wynosi " << number;
+	std::cout << "suma wynosi " << number_from_user;
 }
-// * Program sprawdzaj¹cy czy podana liczba jest liczb¹ doskona³¹ (czyli tak¹, której suma dzielników (z wy³¹czeniem samej siebie) jest równa danej liczbie,
+// * Program sprawdzajÄ…cy czy podana liczba jest liczbÄ… doskonaÅ‚Ä… (czyli takÄ…, ktÃ³rej suma dzielnikÃ³w (z wyÅ‚Ä…czeniem samej siebie) jest rÃ³wna danej liczbie,
 void task2()
 {
 	
 	int number, sum = 0;
-	std::cout << "podaj liczbê\n";
+	std::cout << "podaj liczbÄ™\n";
 	std::cin >> number;
 	for (int i = 1; i != number; i++)
 	{
@@ -49,10 +49,10 @@ void task2()
 	}
 	if (number == sum)
 	{
-		std::cout << "liczba jest liczb¹ doskona³¹";
+		std::cout << "liczba jest liczbÄ… doskonaÅ‚Ä…";
 	}
 }
-//Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+//Program wyÅ›wietlajÄ…cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
 void task3()
 {
 	int result = 1;
@@ -63,11 +63,11 @@ void task3()
 		std::cout << result << '\n';
 	}
 }
-//Program obliczaj¹cy n!.
+//Program obliczajÄ…cy n!.
 void task4()
 {
 	int number, result = 1;
-	std::cout << "Podaj liczbê\n";
+	std::cout << "Podaj liczbÄ™\n";
 	std::cin >> number;
 	for (int i = 1; i != number + 1; i++)
 	{
@@ -75,13 +75,13 @@ void task4()
 	}
 	std::cout << result;
 }
-//Program wyœwietlaj¹cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
+//Program wyÅ›wietlajÄ…cy na ekranie silnie z liczb od 1 do 10 (np. 1!, 2!, 3!, 4!itd.)
 void task5()
 {
 	for (int i = 1; i <= 10; i++)
 		std::cout << i << "!";
 }
-//Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1 = 1, 1x2 = 2, 1x3 = 3 itd.).
+//Program wyÅ›wietlajÄ…cy na ekranie tabliczkÄ™ mnoÅ¼enia od 1 do 9 (np. 1x1 = 1, 1x2 = 2, 1x3 = 3 itd.).
 void task6()
 {
 	for (int i = 0; i < 11; i++)
@@ -97,6 +97,6 @@ int main()
 	//task2();
 	//task3();
 	//task4();
-	//ask5();
+	//task5();
 }
 
