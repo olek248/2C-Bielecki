@@ -108,8 +108,33 @@ void task6()
 void task7()
 {
     std::string userText;
+    int numberOfVovels;
+    int numberOfConsonat;
     std::cout << "podaj ci鉚 znak闚\n";
     std::cin >> userText;
+    for (int i = 0; i < userText.length(); i++)
+    {
+        if (userText[i] >= 'a' && userText[i] <= 'z')
+            if (userText[i] == 'a' ||
+                userText[i] == 'e' ||
+                userText[i] == 'i' ||
+                userText[i] == 'i' ||
+                userText[i] == 'i' ||
+                userText[i] == 'o' ||
+                userText[i] == 'u' ||
+                userText[i] == 'y')
+            {
+                std::cout << "litera to samog這ska\n" << i + 1;
+                numberOfVovels++;
+            }
+            else
+            {
+                std::cout << "litera to sp馧g這ska\n" << i + 1;
+                numberOfConsonat++;
+            }
+    }
+    std::cout << "liczba samog這sek to " << numberOfVovels << "\n";
+    std::cout << "liczba sp馧g這sek to " << numberOfConsonat << "\n";
 }
 int main()
 {
