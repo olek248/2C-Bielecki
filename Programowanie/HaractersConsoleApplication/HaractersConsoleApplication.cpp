@@ -148,7 +148,7 @@ void task8()
 void task9()
 {
     std::string textFromUser;
-    std::cout << "podaj tekst\n";
+    std::cout << "podaj stekst\n";
     std::cin >> textFromUser;
     std::string reverseText = "";
     for (int i = textFromUser.length() - 1; i >= 0; i--)
