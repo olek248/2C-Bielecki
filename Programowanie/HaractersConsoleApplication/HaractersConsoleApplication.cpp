@@ -136,6 +136,36 @@ void task7()
     std::cout << "liczba samog³osek to " << numberOfVovels << "\n";
     std::cout << "liczba spó³g³osek to " << numberOfConsonat << "\n";
 }
+//Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym.
+//Nastêpnie skonwertuj tê liczbê na system dwójkowy (binarny) i wyœwietl wynik.
+void task8()
+{
+    std::string number;
+    std::cout << "podaj liczbê ca³kowit¹\n";
+    std::cin >> number;
+
+}
+void task9()
+{
+    std::string textFromUser;
+    std::cout << "podaj tekst\n";
+    std::cin >> textFromUser;
+    std::string reverseText = "";
+    for (int i = textFromUser.length() - 1; i >= 0; i--)
+    {
+        reverseText == reverseText + textFromUser[i];
+    }
+    if (textFromUser == reverseText)
+        std::cout << "podany tekst jest palindromem\n";
+    else
+        std::cout << "podany tekst nie jest palindromem\n";
+}
+//Program wyci¹gaj¹cy informacje z numeru PESEL
+void task10()
+{
+
+}
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
@@ -145,7 +175,10 @@ int main()
     //task4();
     //task5();
     //task6();
-    task7();
+    //task7();
+    //task8();
+    //task9();
+    task10();
 }
 
 
