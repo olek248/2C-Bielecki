@@ -148,7 +148,7 @@ void task8()
 void task9()
 {
     std::string textFromUser;
-    std::cout << "podaj stekst\n";
+    std::cout << "podaj tekst\n";
     std::cin >> textFromUser;
     std::string reverseText = "";
     for (int i = textFromUser.length() - 1; i >= 0; i--)
@@ -163,9 +163,28 @@ void task9()
 //Program wyci¹gaj¹cy informacje z numeru PESEL
 void task10()
 {
+    std::string numberPesel;
+    std::cout << "podaj pesel\n";
+    std::cin >> numberPesel;
 
 }
+//Algorytm szyfrowania AtBash Cipher - algorytm szyfruj¹cy,
+//w którym ka¿da litera jest zamieniana na literê z przeciwnej strony alfabetu (np. A na Z, B na Y itd.)
+void task11()
+{
+    std::string textFromUser;
+    std::cout << "podaj tekst\n";
+    std::cin >> textFromUser;
+    for (int i = 0; i < textFromUser.length(); i++)
+    {
+        if (textFromUser[i] >= 'a' && textFromUser[i] <= 'z')
+            textFromUser[i] = 'a' + ('z' - textFromUser[i]);
+        if (textFromUser[i] >= 'A' && textFromUser[i] <= 'Z')
+            textFromUser[i] = 'A' + ('Z' - textFromUser[i]);
 
+    }
+
+}
 int main()
 {
     setlocale(LC_CTYPE, "polish");
