@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kolekcje", "kolekcje", "{2B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HaractersConsoleApplication", "HaractersConsoleApplication\HaractersConsoleApplication.vcxproj", "{655ABD63-3997-4B0A-91BD-F6D3ABD28090}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayConsoleApplication", "ArrayConsoleApplication\ArrayConsoleApplication.vcxproj", "{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -87,6 +89,14 @@ Global
 		{655ABD63-3997-4B0A-91BD-F6D3ABD28090}.Release|x64.Build.0 = Release|x64
 		{655ABD63-3997-4B0A-91BD-F6D3ABD28090}.Release|x86.ActiveCfg = Release|Win32
 		{655ABD63-3997-4B0A-91BD-F6D3ABD28090}.Release|x86.Build.0 = Release|Win32
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Debug|x64.ActiveCfg = Debug|x64
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Debug|x64.Build.0 = Debug|x64
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Debug|x86.ActiveCfg = Debug|Win32
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Debug|x86.Build.0 = Debug|Win32
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Release|x64.ActiveCfg = Release|x64
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Release|x64.Build.0 = Release|x64
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Release|x86.ActiveCfg = Release|Win32
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +109,7 @@ Global
 		{FB530CE8-80B3-4BE4-9233-6EDE76403DE8} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
 		{8781177F-756B-4FDD-BABC-6A8D15050AE0} = {5B1F3D37-653E-46AF-94BF-746AEB731C31}
 		{655ABD63-3997-4B0A-91BD-F6D3ABD28090} = {2B220551-6172-4BFC-A4B4-C40C9734491F}
+		{521BCFEF-A14C-4FAB-B1FD-3AE4887DC891} = {2B220551-6172-4BFC-A4B4-C40C9734491F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}
