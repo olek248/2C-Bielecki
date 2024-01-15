@@ -303,6 +303,94 @@ void task15()
      
 		std::cout << "Data " << day << "." << month << "." << year << " jest poprawna\n";
 }
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru jednoelementowego.
+void task16()
+{
+	int firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+
+	int max;
+
+	max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru dwuelementowego.
+void task17()
+{
+	int firstNumber, secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+
+	int max;
+
+	if (secondNumber > firstNumber)
+		max = secondNumber;
+	else
+		max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru trójelementowego.
+void task18()
+{
+	int firstNumber, secondNumber, thirdNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> thirdNumber;
+
+	int max;
+
+	if (thirdNumber > secondNumber && thirdNumber > firstNumber)
+		max = thirdNumber;
+	else
+	{
+		if (secondNumber > firstNumber)
+			max = secondNumber;
+		else
+			max = firstNumber;
+	}
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
+
+//Napisz program, który wyœwietli najwiêksz¹ liczbê ze zbioru czteroelementowego.
+void task19()
+{
+	int firstNumber, secondNumber, thirdNumber, fourthNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> firstNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> secondNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> thirdNumber;
+	std::cout << "Podaj liczbê\n";
+	std::cin >> fourthNumber;
+
+	int max;
+
+	if (fourthNumber > thirdNumber
+		&& fourthNumber > secondNumber
+		&& fourthNumber > firstNumber)
+		max = fourthNumber;
+	else if (thirdNumber > secondNumber
+		&& thirdNumber > firstNumber)
+		max = thirdNumber;
+	else if (secondNumber > firstNumber)
+		max = secondNumber;
+	else
+		max = firstNumber;
+
+	std::cout << "Najwiêksza wartoœæ to: " << max << "\n";
+}
 
 
 
@@ -332,6 +420,10 @@ void task15()
 		//task13();
 		//task14();
 		//task15();
+		//task16();
+		//task17();
+		//task18();
+		//task19();
 	}
 
 

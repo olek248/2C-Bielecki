@@ -59,11 +59,32 @@ void task2()
     double avg = sum / ARRAY_SIZE;
     std::cout << "œrednia artmetyczna wynosi: " << avg << "\n";
 }
+void task3()
+{
+    {
+        const unsigned short LOWER_RANGE = 0;
+        const unsigned short UPPER_RANGE = 70;
+
+        const unsigned short ARRAY_SIZE = 5;
+        int numbers[ARRAY_SIZE];
+
+        srand(time(0));
+
+        std::cout << "wylosowane liczby to:\n";
+        for (int i = 0; i < ARRAY_SIZE; i++)
+        {
+            numbers[i] = rand() % (UPPER_RANGE - LOWER_RANGE + 1) + LOWER_RANGE;
+            std::cout << numbers[i] << ", ";
+        }
+        std::cout << "\n";
+    }
+}
 int main()
 {
     setlocale(LC_CTYPE, "polish");
     //task1();
-    task2();
+    //task2();
+    task3();
 }
 
 
