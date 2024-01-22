@@ -78,13 +78,45 @@ void task3()
         }
         std::cout << "\n";
     }
+
 }
+void task4()
+{
+    const long long UPPER_RANGE = 70;
+    const long long UPPER_RANGE = 1000000;
+    //wersja 2
+    bool sieveOfEratosthenes[UPPER_RANGE + 1];
+
+    for (unsigned long long i = 2; i <= UPPER_RANGE; i++)
+    {
+        sieveOfEratosthenes[i] = true;
+    }
+
+    for (unsigned long long number = 2; number <= UPPER_RANGE; number++)
+    {
+        if (sieveOfEratosthenes[number] /*== true*/)
+        {
+            for (long long numberToCrossOut = number + number; numberToCrossOut <= UPPER_RANGE; numberToCrossOut = numberToCrossOut + number)
+                sieveOfEratosthenes[numberToCrossOut] = false;
+        }
+    }
+
+    for (unsigned long long i = 2; i <= UPPER_RANGE; i++)
+    {
+        if (sieveOfEratosthenes[i] /*== true*/)
+            std::cout << i << ", ";
+    }
+    std::cout << "\n";
+}
+
+
 int main()
 {
     setlocale(LC_CTYPE, "polish");
     //task1();
     //task2();
-    task3();
+    //task3();
+     task4();
 }
 
 
