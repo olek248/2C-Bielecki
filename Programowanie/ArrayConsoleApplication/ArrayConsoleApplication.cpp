@@ -108,6 +108,12 @@ void task4()
     }
     std::cout << "\n";
 }
+void task5()
+{
+    const short LOWER_RANGE = 0;
+    const short UPPER_RANGE = 70;
+
+}
 
 
 int main()
@@ -116,7 +122,8 @@ int main()
     //task1();
     //task2();
     //task3();
-     task4();
+    //task4();
+    task5();
 }
 
 
