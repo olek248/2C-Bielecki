@@ -112,7 +112,7 @@ void task5()
 {
     const short LOWER_RANGE = 0;
     const short UPPER_RANGE = 70;
-
+    
 }
 
 
