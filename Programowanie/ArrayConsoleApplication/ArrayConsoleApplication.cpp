@@ -113,6 +113,36 @@ void task5()
     const short LOWER_RANGE = 0;
     const short UPPER_RANGE = 70;
     
+    const unsigned short ARRAY_SIZE = 10;
+    int numbers[ARRAY_SIZE];
+
+    srand(time(0));
+    std::cout << "wylosowane liczby to:\n";
+    for (int i = 0; i < ARRAY_SIZE; i++)
+    {
+        numbers[i] = rand() % (UPPER_RANGE - LOWER_RANGE + 1) + LOWER_RANGE;
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n";
+    //----------------------------------------------------------------------------------------------------
+
+    for (int i = 1; i < ARRAY_SIZE; i++)
+    {
+        int pom = numbers[i];
+
+        int j;
+        for (j = i - 1; j >= 0; j--)
+        {
+            numbers[j + 1] = numbers[j];
+        }
+        numbers[j + 1] = pom;
+    }
+    std::cout << "posortowane liczby: \n";
+    for (int i = 0; i < ARRAY_SIZE; i++)
+    {
+        std::cout << numbers[i] << ", ";
+    }
+    std::cout << "\n";
 }
 
 
