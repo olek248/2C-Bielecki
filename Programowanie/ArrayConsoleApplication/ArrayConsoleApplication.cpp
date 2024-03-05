@@ -144,6 +144,33 @@ void task5()
     }
     std::cout << "\n";
 }
+long long calculateFactorial(long long n)
+{
+    long long factorial = 1;
+    for (int i = 2; i <= n; i++)
+    {
+        factorial = factorial * i;
+    }
+    return factorial;
+}
+
+long long calculateFactorialV2(long long n)
+{
+    if (n <= 1)
+        return 1;
+    else
+        return n * calculateFactorialV2(n - 1);
+}
+void task6()
+{
+    int number;
+    std::cout << "podaj liczbê:\n";
+    std::cin >> number;
+
+    long long factorial = calculateFactorialV2(number);
+
+    std::cout << "silnia jest rowna " << factorial << "\n";
+}
 
 
 int main()
@@ -153,7 +180,8 @@ int main()
     //task2();
     //task3();
     //task4();
-    task5();
+    //task5();
+    task6();
 }
 
 
