@@ -118,7 +118,7 @@ Instrukcje:
 Poproœ u¿ytkownika o wybór rodzaju kostki(np. 6 - œcienna, 10 - œcienna, 20 - œcienna).
 Poproœ u¿ytkownika o podanie iloœci rzutów.
 Wykonaj podan¹ liczbê rzutów wybranej kostk¹, zapisuj¹c wyniki.
-Wyœwietl otrzymane wyniki oraz sumê otrzymanych wartoœci.
+Wyœwietl otrzymane wyniki oraz sumê otrzymanych wartoœcis.
 Przyk³adowe dzia³anie programu :
 Symulator rzutu kostk¹
 ---------------------- -
