@@ -1,5 +1,6 @@
 #include <iostream>
 
+#pragma region zadanie1
 /*
 Zadanie: Tworzenie prostego kalkulatora
 Napisz program, który bêdzie dzia³a³ jako prosty kalkulator
@@ -47,14 +48,9 @@ void task1()
         return;
     }
     std::cout << "wynik to: " << result;
-            
-        
-
-    
-
-   
-
 }
+#pragma endregion to jest zadanie1
+#pragma region zadanie2
 /*
 ZADANIE
 Konwersja temperatury
@@ -80,30 +76,63 @@ Kelvin : 298.15 K
 void task2()
 {
     int numberOfOperation;
-    float temperature, Celsius_temperature, fahrenneit_temperature, kelvin_temperature, result_first, result_second;
-    std::cout << "1.celsjusz, 2.fahrenheit, 3.kelvin\n";
+    float temperature, first_converted_temperature, second_converted_temperature;
+    std::cout << "1. celsjusz, 2. fahrenheit, 3. kelvin\n";
     std::cin >> numberOfOperation;
     if (numberOfOperation == 1)
     {
         std::cout << "Podaj temperaturê w stopniach Celsiusza\n";
-        std::cin >> Celsius_temperature;
-        result_first = (Celsius_temperature * 1.8) + 32;
-        result_second = Celsius_temperature + 273.15;
-        std::cout << "temperatura w stopniach fahrenheita wynosi: " << result_first << "\n";
-        std::cout << "temperatura w stopniach kelvina wynosi: " << result_second;
+        std::cin >> temperature;
+        first_converted_temperature = (temperature * 1.8) + 32;
+        second_converted_temperature = temperature + 273.15;
+        std::cout << "temperatura w stopniach fahrenheita wynosi: " << first_converted_temperature << "\n";
+        std::cout << "temperatura w stopniach kelvina wynosi: " << second_converted_temperature;
 
     }
     else if (numberOfOperation == 2)
     {
         std::cout << "Podaj temperaturê w stopniach fahrenheita\n";
-        std::cin >> fahrenneit_temperature;
-        result_first =
+        std::cin >> temperature;
+        first_converted_temperature = (temperature - 32) / 2;
+        second_converted_temperature = (temperature + 459, 67) * 5 / 9;
+        std::cout << "temperatura w stopniach celsjusza wynosi: " << first_converted_temperature << "\n";
+        std::cout << "temperatura w stopniach kelvina wynosi: " << second_converted_temperature << "\n";
     }
     else
-        std::cout << "Podaj temperaturê w stopniach Kelvina\n";
-
-        
+    { 
+        std::cout << "podaj temperature w stopniach kelvina\n";
+        std::cin >> temperature;
+        first_converted_temperature = temperature - 273.15;
+        second_converted_temperature = temperature * 9 / 5 - 459, 67;
+        std::cout << "temperatura w stopniach celsjusza wynosi: " << first_converted_temperature << "\n";
+        std::cout << "temperatura w stopniach fahrenheita:  " << second_converted_temperature << "\n";
+    }
 }
+#pragma endregion to jest zadanie 2
+#pragma region zadanie3
+/*
+ZADANIE
+Symulator rzutu kostk¹
+Napisz program, który bêdzie symulowa³ rzut kostk¹.Program powinien umo¿liwiaæ u¿ytkownikowi wybór rodzaju kostki(np. 6 - œcienna, 10 - œcienna, 20 - œcienna) oraz iloœæ rzutów.Po wykonaniu rzutów, program powinien wyœwietliæ wyniki oraz sumê otrzymanych wartoœci.
+Instrukcje:
+Poproœ u¿ytkownika o wybór rodzaju kostki(np. 6 - œcienna, 10 - œcienna, 20 - œcienna).
+Poproœ u¿ytkownika o podanie iloœci rzutów.
+Wykonaj podan¹ liczbê rzutów wybranej kostk¹, zapisuj¹c wyniki.
+Wyœwietl otrzymane wyniki oraz sumê otrzymanych wartoœci.
+Przyk³adowe dzia³anie programu :
+Symulator rzutu kostk¹
+---------------------- -
+Wybierz rodzaj kostki(6 / 10 / 20) : 10
+Ile rzutów chcesz wykonaæ ? : 5
+Wyniki rzutów kostk¹ 10 - œcienn¹ :
+    1. Rzut 1 : 7
+    2. Rzut 2 : 3
+    3. Rzut 3 : 10
+    4. Rzut 4 : 5
+    5. Rzut 5 : 8
+    Suma wyników : 33
+*/
+#pragma endregion to jest zadanie 3
 int main()
 {
     setlocale(LC_CTYPE, "polish");
