@@ -132,12 +132,23 @@ Wyniki rzutów kostk¹ 10 - œcienn¹ :
     5. Rzut 5 : 8
     Suma wyników : 33
 */
+void menu_dice_choose(int dice_type)
+{
+    std::cout << "1. kostka szeœcienna\n";
+    std::cout << "2. kostka dziesiêcioœcienna\n";
+    std::cout << "3. kostka dwudziestoœcienna\n";
+    std::cin >> dice_type;
+}
+void task3()
+{
+   
+}
 #pragma endregion to jest zadanie 3
 int main()
 {
     setlocale(LC_CTYPE, "polish");
     //task1();
-    task2();
+    //task2();
    
 }
 
