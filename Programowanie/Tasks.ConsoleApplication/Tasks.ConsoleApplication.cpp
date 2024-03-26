@@ -139,16 +139,50 @@ void menu_dice_choose(int dice_type)
     std::cout << "3. kostka dwudziestoœcienna\n";
     std::cin >> dice_type;
 }
+
 void task3()
 {
    
 }
 #pragma endregion to jest zadanie 3
+#pragma region zadanie4
+/*
+Konwerter jednostek
+Napisz program konwertuj¹cy jednostki miar.Program powinien umo¿liwiaæ konwersjê miêdzy ró¿nymi jednostkami(np.metry na centymetry, kilogramy na funty) oraz obs³ugiwaæ ró¿ne typy jednostek.
+Instrukcje:
+Zdefiniuj zestaw jednostek, które chcesz obs³ugiwaæ(np.d³ugoœæ: metry, centymetry, cale; masa: kilogramy, funty).
+Poproœ u¿ytkownika o wybór jednostki wejœciowej i jednostki wyjœciowej oraz podanie wartoœci do konwersji.
+Przekonwertuj wartoœæ z jednostki wejœciowej na jednostkê wyjœciow¹ na podstawie ustalonego wspó³czynnika konwersji.
+Wyœwietl wynik konwersji.
+Przyk³adowe dzia³anie programu :
+Konwerter jednostek
+------------------ -
+Wybierz jednostkê wejœciow¹ :
+1. Metry
+2. Centymetry
+3. Cale
+Wybór : 1
+Wybierz jednostkê wyjœciow¹ :
+1. Metry
+2. Centymetry
+3. Cale
+Wybór : 2
+Podaj wartoœæ do konwersji : 5
+Wynik konwersji : 500 centymetrów
+*/
+
+void task4()
+{
+
+}
+#pragma endregion to jest zadanie 4
 int main()
 {
     setlocale(LC_CTYPE, "polish");
     //task1();
     //task2();
+    //task3();
+    task4();
    
 }
 
