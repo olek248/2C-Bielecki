@@ -119,7 +119,7 @@ int main()
 
 	setCursor(1, 1);
 	std::cout << "M";
-
+	
 	while (true)
 	{
 		setCursor(x, y);
@@ -165,7 +165,7 @@ int main()
 		if (currentKeyCode == keyCode::ESC)
 			break;
 	}
-
+	
 
 	//setCursor(5, 7);
 	//std::cout << "Hello World!\n";
