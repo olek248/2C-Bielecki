@@ -27,19 +27,22 @@ void getConsolResolution(int& consoleWidth, int& consoleHeight)
 	consoleWidth = csbi.srWindow.Right - csbi.srWindow.Left;
 	consoleHeight = csbi.srWindow.Bottom - csbi.srWindow.Top;
 }
+
 int main()
-{
-	srand(time(0));
-	int x, y;
-	void getConsolResolution(int& consoleWidth, int& consoleHeight);
-	
+{	
 	while (true)
 	{
-		
+		int consoleWidth, consoleHeight;
+		showConsoleCursor(false);
+		getConsolResolution(consoleWidth, consoleHeight);
+		int x = rand() % (consoleWidth);
+		int y = rand() % (consoleHeight);
+		setCursor(x, y);
 		std::cout << "*";
-
+		Sleep(1000);
+		setCursor(x, y);
+		std::cout << " ";
 	}
-
 }
 
 	
