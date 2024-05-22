@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snakeConsoleApplication", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "skyConsoleApplication", "skyConsoleApplication\skyConsoleApplication.vcxproj", "{CD85A515-D6C7-40BD-A953-2F99625C37B3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawRectangleConsoleApplication", "DrawRectangleConsoleApplication\DrawRectangleConsoleApplication.vcxproj", "{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{CD85A515-D6C7-40BD-A953-2F99625C37B3}.Release|x64.Build.0 = Release|x64
 		{CD85A515-D6C7-40BD-A953-2F99625C37B3}.Release|x86.ActiveCfg = Release|Win32
 		{CD85A515-D6C7-40BD-A953-2F99625C37B3}.Release|x86.Build.0 = Release|Win32
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Debug|x64.ActiveCfg = Debug|x64
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Debug|x64.Build.0 = Debug|x64
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Debug|x86.Build.0 = Debug|Win32
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Release|x64.ActiveCfg = Release|x64
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Release|x64.Build.0 = Release|x64
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Release|x86.ActiveCfg = Release|Win32
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +168,7 @@ Global
 		{0C6C2FC2-1E51-4F54-8F1F-DB6C495B2FC1} = {811DAE9D-72A2-428D-851F-EE764A00FAC2}
 		{0C855495-E367-41D8-A530-C4782C88BF10} = {811DAE9D-72A2-428D-851F-EE764A00FAC2}
 		{CD85A515-D6C7-40BD-A953-2F99625C37B3} = {811DAE9D-72A2-428D-851F-EE764A00FAC2}
+		{DA53CC57-641D-4657-8EF8-72C8B6FD72CF} = {811DAE9D-72A2-428D-851F-EE764A00FAC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}

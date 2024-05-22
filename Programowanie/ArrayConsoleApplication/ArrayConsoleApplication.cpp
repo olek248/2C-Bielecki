@@ -8,7 +8,7 @@ void task1()
     int numbers[ARRAY_SIZE];
     //numbers[2] = 70;
 
-    /*
+    
     std::cout << "Podaj dan¹\n";
     std::cin >> numbers[0];
     std::cout << "Podaj dan¹\n";
@@ -19,7 +19,7 @@ void task1()
     std::cin >> numbers[3];
     std::cout << "Podaj dan¹\n";
     std::cin >> numbers[4];
-    */
+    
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
         std::cout << "Podaj dan¹\n";
@@ -176,12 +176,12 @@ void task6()
 int main()
 {
     setlocale(LC_CTYPE, "polish");
-    //task1();
+    task1();
     //task2();
     //task3();
     //task4();
     //task5();
-    task6();
+    //task6();
 }
 
 
