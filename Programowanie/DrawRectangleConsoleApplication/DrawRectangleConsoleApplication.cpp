@@ -41,8 +41,7 @@ void showConsoleCursor(bool showFlag)
 }
 struct cordinate
 {
-	
-	
+	int x, y;
 };
 
 
@@ -56,9 +55,17 @@ int main()
 	{
 		switch (currentChar)
 		{
-		case 'w'
+		case 'w':
 			vertice.y--;
 			break;
+		case 's':
+			vertice.y++;
+			break;
+		case 'd':
+			vertice.x++;
+				break;
+		case 'a':
+			vertice.x--;
 		}
 	} while (currentChar != 13);
 }
