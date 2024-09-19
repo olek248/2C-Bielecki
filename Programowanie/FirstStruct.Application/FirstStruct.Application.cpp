@@ -10,7 +10,7 @@ void getPointValue(double& x, double& y)
 {
 	std::cout << "Podaj x\n";
 	std::cin >> x;
-	std::cout << "Podaj y\n";
+	std::cout << "Podaj g\n";
 	std::cin >> y;
 }
 
