@@ -20,7 +20,17 @@ void depositToAccount(bankAccount& account, double amount)
 		account.balance = account.balance + amount;
 }
 
-
+void widthdrawalFromAccount(bankAccount& account, double amount)
+{
+	if (amount >= 0
+		&& account.balance >= amount)
+		account.balance = account.balance - amount;
+}
+void transferBetweenAccounts(bankAccount &sourceAccount, bankAccount &targetAccount, double amount)
+	{
+	if (widthdrawalFromAccount(sourceAccount, amount))
+		depositToAccount(targetAccount, amount);
+	}
 void task4()
 {
 	bankAccount firstAccount;
