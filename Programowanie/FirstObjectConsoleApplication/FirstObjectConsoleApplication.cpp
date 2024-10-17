@@ -8,7 +8,8 @@
 
 int main()
 {
-	BankAccount firstAccount;
+	
+	/*BankAccount firstAccount;
 	firstAccount.balance = 7200;
 	firstAccount.owner = "Jan Kowalski";
 	firstAccount.currency = "z³";
@@ -20,6 +21,7 @@ int main()
 	secondAccount.owner = "Ewa Nowak";
 	secondAccount.currency = "z³";
 
-	secondAccount.AccountInformation();
+	secondAccount.AccountInformation();*/
+	
 }
 
