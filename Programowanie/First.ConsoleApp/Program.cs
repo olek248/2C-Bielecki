@@ -29,3 +29,4 @@ Console.WriteLine($"firstNumber przed {firstNumber}");
 ParametrTest_v1(firstNumber);
 Console.WriteLine($"firstNumber po {firstNumber}");
 //ParametrTest_v1(99);
+//tak
