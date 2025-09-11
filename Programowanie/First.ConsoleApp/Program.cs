@@ -29,3 +29,17 @@ Console.WriteLine($"firstNumber przed {firstNumber}");
 ParametrTest_v1(firstNumber);
 Console.WriteLine($"firstNumber po {firstNumber}");
 //ParametrTest_v1(99);
+
+void ParametrTest_v2(ref int p)
+{
+    Console.WriteLine($"Parametr w ParametrTest_v1 {p}");
+    p++;
+    Console.WriteLine($"Parametr w ParametrTest_v1 {p}");
+}
+
+
+firstNumber = 15;
+Console.WriteLine($"firstNumber przed {firstNumber}");
+ParametrTest_v2(ref firstNumber);
+Console.WriteLine($"firstNumber po {firstNumber}");
+//ParametrTest_v2(ref 99); Błąd
