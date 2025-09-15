@@ -43,3 +43,8 @@ Console.WriteLine($"firstNumber przed {firstNumber}");
 ParametrTest_v2(ref firstNumber);
 Console.WriteLine($"firstNumber po {firstNumber}");
 //ParametrTest_v2(ref 99); Błąd
+
+string firstNumber = "15";
+int firstConvertNumber = int.Parse(firstNumber);
+Console.WriteLine($"Po konwersji {firstConvertNumber}");
+
