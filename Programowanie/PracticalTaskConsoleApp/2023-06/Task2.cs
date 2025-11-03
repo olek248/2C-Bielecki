@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PracticalTaskConsoleApp._2023_06
 {
 
-    internal class movie
+    internal class Film
     {
 
 
@@ -27,9 +27,9 @@ namespace PracticalTaskConsoleApp._2023_06
 
 
 
-        static void brrrr()
+        public static void Task()
         {
-            movie film = new movie();
+            Film film = new Film();
             film.ustawTytul("Matrix");
 
             Console.WriteLine("Przed wypożyczeniem:");
