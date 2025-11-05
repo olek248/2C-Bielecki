@@ -27,5 +27,16 @@ namespace PracticalTaskConsoleApp._2022_06
         {
             Console.WriteLine($"Imię: {imie}, Wiek: {wiek}");
         }
+
+        public static void task3()
+        {
+            Osoba osoba1 = new Osoba();
+            Osoba osoba2 = new Osoba("Jan", 18);
+
+            osoba1.WyswietlDane();
+            osoba2.WyswietlDane();
+
+            Console.ReadKey();
+        }
     }
 }
