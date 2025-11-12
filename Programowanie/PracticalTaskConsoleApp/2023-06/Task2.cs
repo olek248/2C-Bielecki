@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace PracticalTaskConsoleApp._2023_06
 {
-
+    /*
+     *****************************************************************
+     Klasa: Film
+    Pola: tytul (string) - przechowuje nazwe filmu maksymalnie 20 znakow
+    liczba wypozyczen (int) - przechowuje liczbe wypozyczen filmu
+    *****************************************************************************************
+    */
     internal class Film
     {
 
