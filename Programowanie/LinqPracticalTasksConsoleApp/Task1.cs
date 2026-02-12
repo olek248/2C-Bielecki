@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -99,6 +100,14 @@ namespace LinqPracticalTasksConsoleApp
             // Zadanie 3
             var q3 = people.OrderBy(p => p.Age);
             Print("Zadanie 3", q3);
+
+            // Zadanie 4
+            var q4 = people.OrderByDescending(p => p.LastName);
+            Print("Zadanie 4", q4);
+
+            // Zadanie 5
+             
+
         }
     }
 }
