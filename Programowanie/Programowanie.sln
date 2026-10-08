@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34024.191
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12224.181 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.vcxproj", "{D374CEDD-6D4A-4A7E-9109-0807ADC58B5E}"
 EndProject
@@ -64,6 +64,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalTaskConsoleApp", "PracticalTaskConsoleApp\PracticalTaskConsoleApp.csproj", "{0DA8AC57-A32E-46BB-9EDC-635F5B266159}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPracticalTasksConsoleApp", "LinqPracticalTasksConsoleApp\LinqPracticalTasksConsoleApp.csproj", "{F4C2944D-B73A-470D-9C3B-1A251C058AF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maui", "Maui", "{563A2F58-E642-4C3A-9BB4-31444E093115}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03", "03", "{C0C44BDD-F672-464A-9DA2-6A7D8F17F741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingMauiApp", "HotelBookingMauiApp\HotelBookingMauiApp.csproj", "{07BA72A2-C0EC-4832-9725-2CDED65BD085}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -315,6 +321,18 @@ Global
 		{F4C2944D-B73A-470D-9C3B-1A251C058AF0}.Release|x64.Build.0 = Release|Any CPU
 		{F4C2944D-B73A-470D-9C3B-1A251C058AF0}.Release|x86.ActiveCfg = Release|Any CPU
 		{F4C2944D-B73A-470D-9C3B-1A251C058AF0}.Release|x86.Build.0 = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|x64.Build.0 = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Debug|x86.Build.0 = Debug|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|x64.ActiveCfg = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|x64.Build.0 = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|x86.ActiveCfg = Release|Any CPU
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -349,6 +367,8 @@ Global
 		{8FFBA66C-19F4-4E59-8514-32337ABE6DE5} = {7DCE79BA-D49E-44F1-8E73-29682C839680}
 		{0DA8AC57-A32E-46BB-9EDC-635F5B266159} = {7DCE79BA-D49E-44F1-8E73-29682C839680}
 		{F4C2944D-B73A-470D-9C3B-1A251C058AF0} = {7DCE79BA-D49E-44F1-8E73-29682C839680}
+		{C0C44BDD-F672-464A-9DA2-6A7D8F17F741} = {563A2F58-E642-4C3A-9BB4-31444E093115}
+		{07BA72A2-C0EC-4832-9725-2CDED65BD085} = {C0C44BDD-F672-464A-9DA2-6A7D8F17F741}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}

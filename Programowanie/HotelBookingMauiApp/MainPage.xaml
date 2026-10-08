@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="HotelBookingMauiApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="thisPage"
+             Title="Rezerwacja Hotelowa"
+             BackgroundColor="#F5F7FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="12"
+                             BindingContext="{x:Reference thisPage}">
+
+            <!-- Tytuł -->
+            <Label Text="Formularz Rezerwacji"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#0F172A"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10" />
+
+            <!-- Dane podstawowe -->
+            <Label Text="Imię i nazwisko" TextColor="#475569" FontSize="13" />
+            <Entry Placeholder="Wpisz imię i nazwisko"
+                   Text="{Binding GuestName}"
+                   BackgroundColor="White" />
+
+            <Label Text="Adres e-mail" TextColor="#475569" FontSize="13" />
+            <Entry Placeholder="Wpisz e-mail"
+                   Keyboard="Email"
+                   Text="{Binding ContactEmail}"
+                   BackgroundColor="White" />
+
+            <!-- Data i Pokój -->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="12" Margin="0,5,0,0">
+                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                    <Label Text="Data przyjazdu" TextColor="#475569" FontSize="13" />
+                    <DatePicker Date="{Binding CheckInDate}"
+                                MinimumDate="{Binding EarliestDate}"
+                                BackgroundColor="White" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                    <Label Text="Rodzaj pokoju" TextColor="#475569" FontSize="13" />
+                    <Picker Title="Wybierz pokój"
+                            ItemsSource="{Binding RoomTypes}"
+                            SelectedItem="{Binding SelectedRoomType}"
+                            BackgroundColor="White" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- Liczniki (Steppery) -->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="12" Margin="0,5,0,0">
+                <VerticalStackLayout Grid.Column="0" Spacing="4" HorizontalOptions="Center">
+                    <Label Text="{Binding StayDuration, StringFormat='Noclegi: {0}'}"
+                           FontAttributes="Bold"
+                           TextColor="#1E293B"
+                           HorizontalOptions="Center" />
+                    <Stepper Minimum="1"
+                             Maximum="14"
+                             Value="{Binding StayDuration}" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="4" HorizontalOptions="Center">
+                    <Label Text="{Binding GuestCount, StringFormat='Liczba osób: {0}'}"
+                           FontAttributes="Bold"
+                           TextColor="#1E293B"
+                           HorizontalOptions="Center" />
+                    <Stepper Minimum="1"
+                             Maximum="4"
+                             Value="{Binding GuestCount}" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- Opcje dodatkowe -->
+            <Label Text="Dodatki" TextColor="#475569" FontSize="13" Margin="0,10,0,0" />
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch IsToggled="{Binding HasBreakfast}" OnColor="#0D9488" />
+                <Label Text="Śniadanie (+40 zł/os)" VerticalOptions="Center" TextColor="#334155" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <CheckBox IsChecked="{Binding HasParking}" Color="#0D9488" />
+                <Label Text="Parking (+30 zł/doba)" VerticalOptions="Center" TextColor="#334155" />
+            </HorizontalStackLayout>
+
+            <!-- Suwak rabatu -->
+            <Label Text="{Binding PromoDiscount, StringFormat='Rabat: {0:F0}%'}"
+                   TextColor="#0D9488"
+                   FontAttributes="Bold"
+                   Margin="0,5,0,0" />
+            <Slider Minimum="0"
+                    Maximum="20"
+                    Value="{Binding PromoDiscount}"
+                    MinimumTrackColor="#0D9488" />
+
+            <!-- Przycisk -->
+            <Button Text="Oblicz koszt"
+                    Command="{Binding CalculateCommand}"
+                    BackgroundColor="#0F172A"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    HeightRequest="48"
+                    Margin="0,10,0,0" />
+
+            <!-- Wynik -->
+            <Label Text="{Binding Message}"
+                   FontSize="14"
+                   TextColor="#0F172A"
+                   Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
