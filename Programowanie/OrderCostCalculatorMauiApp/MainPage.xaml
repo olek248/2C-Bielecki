@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="OrderCostCalculatorMauiApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="thisPage"
+             Title="Kalkulator Zamówienia">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="12"
+                             BindingContext="{x:Reference thisPage}">
+
+            <Label Text="Kalkulator Zamówienia"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Nazwa produktu -->
+            <Label Text="Nazwa produktu:" />
+            <Entry Placeholder="np. Słuchawki"
+                   Text="{Binding ProductName}" />
+
+            <!-- Cena za sztukę -->
+            <Label Text="Cena za sztukę (zł):" />
+            <Entry Placeholder="np. 120"
+                   Keyboard="Numeric"
+                   Text="{Binding UnitPriceText}" />
+
+            <!-- Liczba sztuk -->
+            <Label Text="{Binding Quantity, StringFormat='Liczba sztuk: {0}'}"
+                   FontAttributes="Bold" />
+            <Stepper Minimum="1"
+                     Maximum="10"
+                     Value="{Binding Quantity}" />
+
+            <!-- Sposób dostawy (Picker) -->
+            <Label Text="Sposób dostawy:" />
+            <Picker Title="Wybierz dostawę"
+                    ItemsSource="{Binding DeliveryMethods}"
+                    SelectedItem="{Binding SelectedDelivery}" />
+
+            <!-- Przycisk Oblicz -->
+            <Button Text="Oblicz"
+                    Command="{Binding CalculateCommand}"
+                    Margin="0,10,0,0" />
+
+            <!-- Podsumowanie -->
+            <Label Text="{Binding ResultMessage}"
+                   FontSize="16"
+                   Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
