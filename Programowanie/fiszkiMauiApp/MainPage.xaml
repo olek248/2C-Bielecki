@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="fiszkiMauiApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="thisPage"
+             Title="Fiszki do nauki">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="15"
+                             BindingContext="{x:Reference thisPage}">
+
+            <Label Text="Fiszki Angielski"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+          
+            <CarouselView ItemsSource="{Binding Cards}"
+                          CurrentItem="{Binding CurrentCard}"
+                          Position="{Binding CurrentPosition}"
+                          IndicatorView="indicator"
+                          HeightRequest="150">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                     
+                        <VerticalStackLayout BackgroundColor="#E2E8F0"
+                                             Padding="20"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="Center">
+                            <Label Text="{Binding English}"
+                                   FontSize="28"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+           
+            <IndicatorView x:Name="indicator"
+                           IndicatorColor="LightGray"
+                           SelectedIndicatorColor="Blue"
+                           HorizontalOptions="Center" />
+
+            
+            <Button Text="Pokaż tłumaczenie"
+                    Command="{Binding ShowTranslationCommand}" />
+
+            
+            <Label Text="{Binding TranslationText}"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+           
+            <Button Text="Zacznij od początku"
+                    Command="{Binding ResetCommand}"
+                    Margin="0,20,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
