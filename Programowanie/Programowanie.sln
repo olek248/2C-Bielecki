@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.10.12224.181 stable
+VisualStudioVersion = 18.10.12224.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.vcxproj", "{D374CEDD-6D4A-4A7E-9109-0807ADC58B5E}"
 EndProject
@@ -72,6 +72,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingMauiApp", "HotelBookingMauiApp\HotelBookingMauiApp.csproj", "{07BA72A2-C0EC-4832-9725-2CDED65BD085}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCostCalculatorMauiApp", "OrderCostCalculatorMauiApp\OrderCostCalculatorMauiApp.csproj", "{C91808F3-4E7C-402C-99F0-45AFAF4D8D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WypozyczalniaSportowaMauiApp", "WypozyczalniaSportowaMauiApp\WypozyczalniaSportowaMauiApp.csproj", "{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -349,6 +351,19 @@ Global
 		{C91808F3-4E7C-402C-99F0-45AFAF4D8D66}.Release|x64.Build.0 = Release|Any CPU
 		{C91808F3-4E7C-402C-99F0-45AFAF4D8D66}.Release|x86.ActiveCfg = Release|Any CPU
 		{C91808F3-4E7C-402C-99F0-45AFAF4D8D66}.Release|x86.Build.0 = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|x64.Build.0 = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Debug|x86.Build.0 = Debug|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|x64.ActiveCfg = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|x64.Build.0 = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|x86.ActiveCfg = Release|Any CPU
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -386,6 +401,7 @@ Global
 		{C0C44BDD-F672-464A-9DA2-6A7D8F17F741} = {563A2F58-E642-4C3A-9BB4-31444E093115}
 		{07BA72A2-C0EC-4832-9725-2CDED65BD085} = {C0C44BDD-F672-464A-9DA2-6A7D8F17F741}
 		{C91808F3-4E7C-402C-99F0-45AFAF4D8D66} = {C0C44BDD-F672-464A-9DA2-6A7D8F17F741}
+		{95FB1B51-9D1E-4CCC-BF77-E36D52422A22} = {C0C44BDD-F672-464A-9DA2-6A7D8F17F741}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3DEB695-48C7-4777-87D0-687CA9C2DE66}
