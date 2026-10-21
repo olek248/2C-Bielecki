@@ -15,7 +15,7 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
-          
+
             <CarouselView ItemsSource="{Binding Cards}"
                           CurrentItem="{Binding CurrentCard}"
                           Position="{Binding CurrentPosition}"
@@ -23,7 +23,7 @@
                           HeightRequest="150">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
-                     
+
                         <VerticalStackLayout BackgroundColor="#E2E8F0"
                                              Padding="20"
                                              VerticalOptions="Center"
@@ -37,28 +37,27 @@
                 </CarouselView.ItemTemplate>
             </CarouselView>
 
-           
+
             <IndicatorView x:Name="indicator"
                            IndicatorColor="LightGray"
                            SelectedIndicatorColor="Blue"
                            HorizontalOptions="Center" />
 
-            
+
             <Button Text="Pokaż tłumaczenie"
                     Command="{Binding ShowTranslationCommand}" />
 
-            
+
             <Label Text="{Binding TranslationText}"
                    FontSize="22"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
-           
+
             <Button Text="Zacznij od początku"
                     Command="{Binding ResetCommand}"
                     Margin="0,20,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
